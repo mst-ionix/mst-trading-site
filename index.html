@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MST Trading — Premium Eigenmarken auf Amazon</title>
+  <meta name="description" content="MST Trading entwickelt und vertreibt Premium-Eigenmarken auf Amazon. KLINGENHELD, GLANZGUT, DEKOFY.">
+  <style>
+    :root {
+      --black: #1a1a1a;
+      --charcoal: #2d2d2d;
+      --dark: #3a3a3a;
+      --gray: #6b6b6b;
+      --light-gray: #e8e5e0;
+      --cream: #f5f3ef;
+      --white: #ffffff;
+      --accent: #4a7c6f;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      color: var(--charcoal);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header {
+      padding: 2rem 2rem;
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      font-weight: 300;
+      opacity: 0.7;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 2rem;
+      text-align: center;
+      background: var(--cream);
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--gray);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Brands */
+    .brands {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .brands h2 {
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 3rem;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .brand-card {
+      background: var(--cream);
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .brand-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .brand-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+
+    .brand-category {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .brand-desc {
+      font-size: 0.95rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* Product Image Section */
+    .showcase {
+      padding: 4rem 2rem;
+      background: var(--black);
+      text-align: center;
+    }
+
+    .showcase img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .showcase p {
+      color: var(--light-gray);
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* About */
+    .about {
+      padding: 5rem 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 1.5rem;
+    }
+
+    .about p {
+      font-size: 1rem;
+      color: var(--gray);
+      margin-bottom: 1rem;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 4rem 2rem;
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 1rem;
+    }
+
+    .contact p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      padding: 2rem;
+      background: var(--black);
+      color: var(--gray);
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--light-gray);
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    footer a:hover {
+      color: var(--white);
+    }
+
+    .footer-links {
+      margin-bottom: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero { padding: 3rem 1.5rem; }
+      .brands { padding: 3rem 1.5rem; }
+      .brand-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MST <span>Trading</span></div>
+  </header>
+
+  <section class="hero">
+    <h1>Premium-Eigenmarken auf Amazon</h1>
+    <p>MST Trading entwickelt und vertreibt hochwertige Produkte unter eigenen Marken. Qualitaet, Design und Kundenzufriedenheit stehen im Mittelpunkt.</p>
+  </section>
+
+  <section class="brands">
+    <h2>Unsere Marken</h2>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="brand-name">Klingenheld</div>
+        <div class="brand-category">Beauty & Pflege</div>
+        <p class="brand-desc">Premium-Manikuere und Koerperpflege-Instrumente. Praezisionswerkzeuge aus gehaertetem Edelstahl mit hoechster Verarbeitungsqualitaet.</p>
+      </div>
+      <div class="brand-card">
+        <div class="brand-name">Glanzgut</div>
+        <div class="brand-category">Haushalt</div>
+        <p class="brand-desc">Durchdachte Haushaltsprodukte, die den Alltag einfacher machen. Langlebige Materialien, modernes Design.</p>
+      </div>
+      <div class="brand-card">
+        <div class="brand-name">Dekofy</div>
+        <div class="brand-category">Dekoration</div>
+        <p class="brand-desc">Stilvolle Wohn-Accessoires und Dekoartikel. Von minimalistisch bis verspielt &mdash; fuer ein Zuhause mit Persoenlichkeit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="showcase">
+    <img src="images/klingenheld-hero.jpg" alt="KLINGENHELD Pinzetten-Set" loading="lazy">
+    <p>Klingenheld &mdash; Praezision trifft Design</p>
+  </section>
+
+  <section class="about">
+    <h2>Ueber MST Trading</h2>
+    <p>MST Trading ist ein in Deutschland ansaessiges E-Commerce-Unternehmen, spezialisiert auf die Entwicklung und den Vertrieb von Premium-Eigenmarken ueber Amazon.</p>
+    <p>Von der Produktentwicklung ueber das Qualitaetsmanagement bis hin zum Kundenservice &mdash; wir kontrollieren die gesamte Wertschoepfungskette, um unseren Kunden Produkte zu liefern, die ueberzeugen.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Kontakt</h2>
+    <p>MST Trading &mdash; Maximilian Stueckert</p>
+    <p>Am Duerrbach 6, 97080 Wuerzburg</p>
+    <p><a href="mailto:info@mst-trading.de">info@mst-trading.de</a></p>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+    <p>&copy; 2026 MST Trading. Alle Rechte vorbehalten.</p>
+  </footer>
+
+</body>
+</html>
